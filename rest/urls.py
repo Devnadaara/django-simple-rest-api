@@ -7,6 +7,7 @@ router = routers.DefaultRouter()
 
 router.register(r'products',views.ProductViewSet,basename='products')
 router.register(r'collections',views.CollectionViewSet)
+router.register(r'customers',views.CustomerViewSet)
 
 urlpatterns =[
         path('',include(router.urls))
